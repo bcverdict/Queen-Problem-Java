@@ -1,12 +1,16 @@
 package com.company;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        int row = 4;
-        int col = 4;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = input.nextInt();
+        int row = num;
+        int col = num;
         boolean[][] bool_board = new boolean[row][col]; //true if piece attacking
         boolean[][] pos_board = new boolean[row][col]; //true if piece placed
 
